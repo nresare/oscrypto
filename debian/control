@@ -1,0 +1,24 @@
+Source: oscrypto
+Section: python
+Priority: optional
+Maintainer: Noa Resare <noa@spotify.com>
+Build-Depends: debhelper (>= 9), dh-python, python3-all, python-all,
+   python3-setuptools, python-setuptools, python-asn1crypto, python3-asn1crypto
+Standards-Version: 3.9.5
+Homepage: https://github.com/wbond/oscrypto
+
+Package: python-oscrypto
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-asn1crypto
+Description: Compiler-free Python crypto library backed by the OS.
+  oscrypto provides cryptographic primitives such as TLSv1.x socket wrappers,
+  symmetric and assymetric encryption, signature generation and verification
+  and key generation.
+
+Package: python3-oscrypto
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python3-asn1crypto
+Description: Compiler-free Python crypto library backed by the OS.
+  oscrypto provides cryptographic primitives such as TLSv1.x socket wrappers,
+  symmetric and assymetric encryption, signature generation and verification
+  and key generation.
